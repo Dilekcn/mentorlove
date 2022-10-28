@@ -1,6 +1,18 @@
 import { Flex, VStack, Image, Link } from "@chakra-ui/react";
 import logo from "../assets/logo.png";
 
+function LinkItem(props: { text: string }) {
+  return (
+    <Link
+      href="/"
+      fontSize={{ md: "22px", lg: "24px" }}
+      display={{ base: "none", md: "inline" }}
+    >
+      {props.text}
+    </Link>
+  );
+}
+
 function Navbar() {
   return (
     <VStack bg="#202020" color="#FFFFFF">
@@ -12,7 +24,6 @@ function Navbar() {
         alignItems="center"
       >
         <Link href="/">
-          {" "}
           <Image
             src={logo}
             h={{ base: "8", sm: "10", md: "12", lg: "14" }}
@@ -20,20 +31,9 @@ function Navbar() {
           />
         </Link>
 
-        <Link
-          href="/"
-          fontSize={{ md: "22px", lg: "24px" }}
-          display={{ base: "none", md: "inline" }}
-        >
-          Home
-        </Link>
-        <Link
-          fontSize={{ md: "22px", lg: "24px" }}
-          display={{ base: "none", md: "inline" }}
-          href="#features"
-        >
-          Features
-        </Link>
+        <LinkItem text={"Home"} />
+        <LinkItem text={"Features"} />
+
         <Link
           fontSize={{ md: "22px", lg: "24px" }}
           display={{ base: "none", md: "inline" }}

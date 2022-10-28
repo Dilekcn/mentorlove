@@ -1,6 +1,5 @@
 import {useState} from "react"
 import { Flex, Button, FormControl, FormLabel, Input } from "@chakra-ui/react";
-// import axios from "axios";
 
 function Footer() {
   const [email, setIEmail] = useState("")
@@ -13,7 +12,6 @@ function Footer() {
   body: JSON.stringify({"email": email})
 }).then(response => response.json()).catch(err => console.log(err))
 }
-
 
   return (
     <Flex

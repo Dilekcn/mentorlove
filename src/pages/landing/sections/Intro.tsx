@@ -60,21 +60,18 @@ function Intro() {
                 bgRepeat="no-repeat"
                 bgSize="cover"
                 height={{ base: "40px", sm: "50px", md: "45px", lg: "50px" }}
-               pointerEvents="none"
-
+                pointerEvents="none"
               ></Button>
             </Link>
-            <Link href="#features"  textDecoration={"none"}>
-              {" "}
+            <Link href="#features">
               <Button
                 width={{ base: "140px", sm: "170px", md: "144px", lg: "200px" }}
                 fontSize={{ base: "18px", sm: "20px", md: "18px", lg: "24px" }}
-              bg="rgba(196, 196, 196, 0.22)"
+                bg="rgba(196, 196, 196, 0.22)"
                 height={{ base: "40px", sm: "50px", md: "45px", lg: "50px" }}
-               pointerEvents="none"
-              
+                pointerEvents="none"
               >
-                Learn More
+                <Text textDecoration={"none"}>Learn More</Text>
               </Button>
             </Link>
           </HStack>
@@ -119,7 +116,7 @@ function Intro() {
                 color="black"
                 fontSize={"12px"}
                 height="25px"
-               >
+              >
                 👍 On Track
               </Button>
               <Button
